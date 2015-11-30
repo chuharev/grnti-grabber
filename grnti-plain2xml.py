@@ -58,7 +58,11 @@ with open(FILENAME, 'r') as f:
     make_xml_node(new_feed, 'subjects', u'ГРНТИ' , 'ROOT', 'FALSE')
 
     for i, line in  enumerate (lst[:]):
-        indx, level = parse_line( line.lstrip()  )
+        line1 = line.lstrip()
+        if  line1.startswith("#"):
+            continue
+
+        indx, level = parse_line( line1  )
 
         parent_id = ''
         if indx[2] == '00' and indx[3]=='00':
