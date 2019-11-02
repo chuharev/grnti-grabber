@@ -5,7 +5,6 @@ setup(name='grnti-grabber',
       description='GRNTI stands for russian science classification system',
       url='https://github.com/chuharev/grnti-grabber',
       author='Alexey Chuharev',
-      author_email='email@example.com',
       license='MIT',
       scripts=[
             'bin/grnti-download',
