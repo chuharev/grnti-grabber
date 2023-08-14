@@ -16,7 +16,7 @@ with open(FILENAME, 'r') as f:
 
     for i, line in enumerate(lst):
         current_code = re.match(r'(\d{2})\.?(\d{2})?\.?(\d{2})?', line.strip()).group(0)
-        current_title = '"' + line.replace(current_code, '').strip() + '"'
+        current_title = '"' + line.replace(current_code, '').replace('"', '""').strip() + '"'
         current_level = len(current_code.split('.')) - 1
         idx = current_level * 2
         current_row[idx], current_row[idx + 1] = current_code, current_title
