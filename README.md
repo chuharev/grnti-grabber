@@ -35,6 +35,7 @@ sys     0m2.908s
 
 $ python3 bin/grnti-plain2xml.py data/grnti-$(date +%Y-%m-%d).txt > data/grnti-$(date +%Y-%m-%d).xml 
 $ python3 bin/grnti-xml2json.py data/grnti-$(date +%Y-%m-%d).xml > data/grnti-$(date +%Y-%m-%d).json 
+$ python3 bin/grnti-plain2csv.py data/grnti-$(date +%Y-%m-%d).txt > data/grnti-$(date +%Y-%m-%d).csv 
 ```
 And that is all.
 
@@ -60,6 +61,7 @@ Grab latest version:
 time python3 bin/grnti-download.py > data/grnti-latest.txt
 python3 bin/grnti-plain2xml.py data/grnti-latest.txt > data/grnti-latest.xml 
 python3 bin/grnti-xml2json.py data/grnti-latest.xml > data/grnti-latest.json
+python3 bin/grnti-plain2csv.py data/grnti-latest.txt > data/grnti-latest.csv
 ```
 
 ### Contributing
